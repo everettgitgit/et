@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: italic;
+    height: 100%;
+}
+
+:root{
+    --divWidth: calc(100vw / 8);
+    --divHeight: calc(100vh / 8);
+}
+div{
+    background: white;
+    width: calc(var(--divWidth) - 20px);
+    height: calc(var(--divHeight) - 20px);
+    padding: 0px;
+    font-size: 1em;
+}
+
+#TopDiv1 {
+    background: green;
+    width: calc(var(--divHeight) * 7 ) ;
+    height: calc(var(--divHeight) - 20px);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items:left;
+}
+
+#TopDiv2{
+    border: 8px solid black;
+    background: red;
+    width: calc(var(--divHeight) - 16px);
+    height: calc(var(--divHeight) - 16px);
+
+}
+#MidDiv1{
+    border: 14px solid pink;
+    background: green;
+    width: calc(var(--divHeight) * 2 - 28px);
+    height: calc(var(--divHeight) * 2 - 28px);
+    margin-left: var(--divHeight);
+}
+
+#BottomDiv1{
+    border: 28px solid rgb(214, 83, 203);
+    background: blue;
+    width: calc(var(--divHeight) * 4 - 56px);
+    height: calc(var(--divHeight) * 4 - 56px);
+    margin-left: calc(var(--divHeight) * 3);
+}
+
+
+h1{
+    margin-top: 0;
+    color: blue;
+}
+
+p{
+    color: rgb(165, 227, 255);
+    font-size: 1em;
+    margin: 0;
+
+
+}
+
+#MidDiv1 h1{
+    padding: 10px;
+}
+
+
+#BottomDiv1 h1{
+    color: green;
+    padding: 40px;
+}
